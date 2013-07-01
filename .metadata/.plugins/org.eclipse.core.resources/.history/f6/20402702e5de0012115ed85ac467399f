@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">map</string>
+    <string name="action_settings">Settings</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="str_btn_find">Find</string>
+    <string name="hnt_et_location">Enter location</string>
+    <string name="Search_Place">Search Place</string>
+    <string name="Route_Map">Route Map</string>
+    <string name="To">To</string>
+    <string name="From">From</string>
+    <string name="Ok">OK</string>
+    <string name="Cancel">CANCEL</string>
+    <string name="Find">Find</string>
+    <string name="Radius">Radius</string>
+    <string name="Hint">Hint</string>
+    <string name="Search_Everything">Search Eerything</string>
+
+</resources>

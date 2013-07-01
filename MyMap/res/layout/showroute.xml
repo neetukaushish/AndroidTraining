@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  android:orientation="vertical"
+  android:layout_width="match_parent"
+  android:layout_height="wrap_content"
+  android:padding="4dip">
+  <LinearLayout android:layout_width="match_parent" 
+  android:layout_height="wrap_content"
+  android:orientation="horizontal"
+  android:id="@+id/find_place_dialog_layout1">
+    <TextView android:text="@string/Hint"
+    android:layout_width="100dip"
+    android:textSize="20sp"
+    android:layout_height="wrap_content"
+    android:id="@+id/lbl_place_name"
+    android:layout_alignBaseline="@+id/text_place_name"
+    android:layout_marginRight="5dip"
+    android:layout_marginLeft="5dip"/>
+    <EditText
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:hint="e.g. ATM, Mall..."
+    android:inputType="text|textFilter"
+    android:id="@id/text_place_name"/>
+	</LinearLayout>
+  <LinearLayout android:layout_width="match_parent" 
+  android:layout_height="wrap_content"
+  android:orientation="horizontal"
+  android:layout_below="@id/find_place_dialog_layout1"
+  android:id="@+id/find_place_dialog_layout2">
+  <CheckBox android:layout_width="wrap_content"
+  	android:layout_height="wrap_content"
+  	android:layout_marginLeft="5dip"
+  	android:layout_marginRight="5dip"
+  	android:id="@+id/check_search_everything"/>
+  	<TextView android:layout_height="match_parent"
+  		android:layout_width="wrap_content"
+  		android:text="Search Everything"
+  		android:layout_marginLeft="5dip"
+  		android:gravity="center_vertical"/>
+	</LinearLayout>
+    <LinearLayout android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_below="@id/find_place_dialog_layout2"
+    android:id="@+id/find_place_dialog_layout3"
+    android:layout_marginBottom="5dip">
+   <TextView android:layout_width="match_parent"
+   android:layout_height="wrap_content"
+   android:gravity="right"
+   android:textColor="#ffffff"
+   android:textSize="20sp"
+   android:textStyle="bold"
+   android:id="@+id/lbl_find_place_radius"/>
+	</LinearLayout>
+  <LinearLayout android:layout_width="match_parent" 
+  android:layout_height="wrap_content"
+  android:orientation="horizontal"
+  android:layout_below="@id/find_place_dialog_layout3"
+  android:id="@+id/find_place_dialog_layout4"
+  android:layout_marginTop="10dip">
+    <TextView android:text="@string/Radius"
+    android:layout_width="100dip"
+    android:textSize="20sp"
+    android:layout_height="wrap_content"
+    android:id="@+id/lbl_place_radius"
+    android:layout_alignBaseline="@+id/text_place_radius"
+    android:layout_marginRight="5dip"
+    android:layout_marginLeft="5dip"/>
+    <SeekBar android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:progress="100"
+    android:max="10000"
+    android:layout_gravity="center_vertical"
+    android:id="@+id/seekbar_radius"/>
+    </LinearLayout>
+
+  <LinearLayout android:layout_width="fill_parent" 
+  android:layout_height="wrap_content"
+  android:orientation="horizontal"
+  android:layout_below="@id/find_place_dialog_layout4"
+  android:id="@+id/find_place_dialog_layout5"
+  android:layout_centerInParent="true"
+  android:layout_marginTop="10dip">
+  <View android:layout_width="110dip"
+  android:layout_height="wrap_content"/>
+  <Button android:id="@+id/btnfind_place_dialog_ok"
+  android:layout_width="90dip"
+  android:layout_height="wrap_content"
+  android:text="@string/Find"
+  android:textSize="20sp"
+  android:layout_weight="1.0"
+  android:onClick="getPlace"
+  />
+   <Button android:id="@+id/btnfind_place_dialog_cancel"
+  android:layout_width="90dip"
+  android:layout_height="wrap_content"
+  android:text="@string/Cancel"
+  android:textSize="20sp"
+  android:layout_weight="1.0"
+  />
+	</LinearLayout>
+	
+</RelativeLayout>

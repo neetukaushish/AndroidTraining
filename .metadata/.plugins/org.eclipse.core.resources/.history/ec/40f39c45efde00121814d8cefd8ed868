@@ -1,0 +1,21 @@
+package com.addvalsolutions.map;
+
+import java.util.ArrayList;
+
+import android.content.Context;
+import android.widget.ArrayAdapter;
+import android.widget.Filterable;
+
+public class PlaceAutoCompleteAdapter extends ArrayAdapter<String> implements Filterable{
+	public PlaceAutoCompleteAdapter(Context context, int textViewResourceId) {
+		super(context, textViewResourceId);
+		// TODO Auto-generated constructor stub
+	}
+
+	private ArrayList<String> resultList;
+
+    public PlacesAutoCompleteAdapter(Context context, int textViewResourceId) {
+        super(context, textViewResourceId);
+    }
+
+

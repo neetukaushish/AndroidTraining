@@ -1,0 +1,11 @@
+package com.addvalsolutions.map;
+
+import android.widget.AutoCompleteTextView;
+
+public class CustomAutoCompleteTextView extends AutoCompleteTextView{
+	public CustomAutoCompleteTextView(Context context, AttributeSet attrs) {
+        super(context, attrs);
+    }
+	
+
+}

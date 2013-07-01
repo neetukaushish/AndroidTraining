@@ -1,0 +1,6 @@
+package com.addvalsolutions.map;
+
+public class CustomAutoCompleteTextView extends AutoCompleteTextView{
+	
+
+}

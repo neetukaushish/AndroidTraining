@@ -1,0 +1,7 @@
+package com.addvalsolutions.map;
+
+import android.widget.ArrayAdapter;
+
+public class PlaceAutoComplete extends ArrayAdapter<String> implements Filterable{
+
+}

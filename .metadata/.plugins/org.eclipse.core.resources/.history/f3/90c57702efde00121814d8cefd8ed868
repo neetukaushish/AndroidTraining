@@ -1,0 +1,5 @@
+package com.addvalsolutions.map;
+
+public class PlaceAutoComplete extends ArrayAdapter<String> implements{
+
+}

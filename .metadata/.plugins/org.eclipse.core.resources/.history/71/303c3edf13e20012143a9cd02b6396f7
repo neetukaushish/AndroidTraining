@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/tableLayout1"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" >
+ 
+    <TableRow 
+        android:id="@+id/row"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <ImageView android:id="@+id/img"
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:src="@drawable/ic_launcher"/>
+        <TextView 
+            android:id="@+id/tv_name1"
+            android:layout_width="300dp"
+            android:layout_height="120dp"
+            android:text="hellooo"
+            android:layout_gravity="right"/>
+    </TableRow>
+</TableLayout>
